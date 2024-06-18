@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="30dp"
+    android:background="#99C2E6"
+    tools:context=".activity.InputCarActivity">
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/editCarNo"
+        android:hint="carNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editcarName"
+        android:hint="carName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/editcarPrice"
+        android:hint="carPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:onClick="Add"
+            android:text="ADD"
+            android:id="@+id/add"
+            android:backgroundTint="#7CB342"
+            android:layout_marginLeft="40dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onClick="Cancel"
+            android:text="Cancel"
+            android:id="@+id/cancel"
+            android:backgroundTint="#EF0909"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
